@@ -1,6 +1,14 @@
-# Documentación API debQ
+---
+layout: post
+title: Manual de uso de la api
+---
 
 Este documento pretende explicar tanto el funcionamiento como el uso correcto de la API del sistema de turnos de debMedia.
+
+---
+
+# Documentación API debQ
+
 
 ## Detalles previos
 
