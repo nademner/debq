@@ -3,8 +3,9 @@ layout: post
 title: Manual de usuario v3.0.0
 ---
 
-Esto aparecerá en la pagina principal
+Manual de usuario para el sistema de turnos de debMedia.
 
 ---
 
-Esto no aparecerá en la pagina principal
+Manual!
+
