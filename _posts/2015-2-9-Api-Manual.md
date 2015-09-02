@@ -281,6 +281,7 @@ Los posibles valores son
 #### Proceso de llamado
 
 Para poder realizar las acciones correspondientes al llamado de turno se cuenta con un servicio, a continuación se lo detalla:
+
 ```
 Request Method: POST
 
@@ -320,6 +321,7 @@ Como se observa en el request body el parámetro 'qTurn.id' es opcional. En caso
 A diferencia del proceso de llamado, este contiene mas de un servicio, a continuación se los detalla
 
 ***Finalización***
+
 ```
 Http action: POST
 
@@ -339,6 +341,7 @@ Status code: 200 OK
 ```
 
 ***Descarte***  
+
 ```
 Request Method: POST
 
@@ -358,6 +361,7 @@ Status code: 200 OK
 ```
 
 ***Derivación***  
+
 ```
 Request Method: POST
 
@@ -384,6 +388,7 @@ Status code: 200 OK
 Tanto el grupo de destino como la sala de espera son parámetros que tienen que ser especificados por el cliente en el momento que se deriva el turno, y se obtienen a partir de la configuración del usuario obtenida en el servicio ***loggedUser***.
 
 ***Colocar al final***  
+
 ```
 Request Method: POST
 
