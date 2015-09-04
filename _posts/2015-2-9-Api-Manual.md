@@ -12,7 +12,8 @@ Este documento pretende explicar tanto el funcionamiento como el uso correcto de
 
 ## Detalles previos
 
-El sistema se maneja con listas enlazadas para mantener los turnos organizados. A medida que se agregan turnos a las listas estos se agregan de manera que el primero en la lista siempre sea el que mas tiempo de espera tiene hasta el momento. Notar lo siguiente
+El sistema se maneja con listas enlazadas para mantener los turnos organizados. A medida que se agregan turnos a las listas estos se agregan de manera que el primero en la lista siempre sea el que mas tiempo de espera tiene hasta el momento. Notar lo siguiente  
+
 * Las listas enlazadas son de **turnos**.
 * Existen las entidades **tramites** y **grupo de tramites**. Los grupos de tramites sirven como contenedor para conglomerar muchos tramites.
 * En el documento las palabras tramites y **filas** se usan como sinónimos.
