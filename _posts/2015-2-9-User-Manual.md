@@ -7,7 +7,7 @@ Manual de usuario para el sistema de turnos de debMedia.
 
 ---
 
-* This will become a table of contents (this text will be scraped).
+* TOC
 {:toc}
 
 
