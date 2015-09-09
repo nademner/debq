@@ -26,14 +26,8 @@ El sistema cuenta con seis entidades fundamentales las cuales permiten reproduci
  * Puestos: El sistema cuenta con la entidad puestos, esta permite definir los distintos puestos de trabajo donde se atenderán los tramites. 
  * Salas de espera: El sistema cuenta con la entidad salas de espera, esta permite definir el lugar físico donde atiende cada puesto de trabajo.
 
-## Instalación
 
-El sistema de turnos estará instalado en una computadora la cual funcionará como servidor, a la cual se conectaran los distintos módulos. Una vez colocado el servidor en la red en la cual se usará se podrá acceder al mismo a través de un navegador web ( Chrome o Firefox ). Para lograr esto ingresar http://debServer en el navegador y verá la siguiente pantalla :
-
-![Login]({{ site.url }}{{ site.baseurl }}/images/user_manual/Login.png)
-
-
-# Licencias
+## Licencias
 
 El sistema cuenta con 3 licencias estandar que definen la cantidad máxima de cierto tipo de entidades.
 
@@ -57,5 +51,11 @@ El sistema cuenta con 3 licencias estandar que definen la cantidad máxima de ci
 
 Los usuarios que define cada licencia son usuarios de atención, es decir en estos no están incluidos los usuarios administradores.
 Las licencias se definen por sucursal, es decir en el caso de que haya mas de una , cada una tendrá su propia licencia.
+
+## Instalación
+
+El sistema de turnos estará instalado en una computadora la cual funcionará como servidor, a la cual se conectaran los distintos módulos. Una vez colocado el servidor en la red en la cual se usará se podrá acceder al mismo a través de un navegador web ( Chrome o Firefox ). Para lograr esto ingresar http://debServer en el navegador y verá la siguiente pantalla :
+
+![Login]({{ site.url }}{{ site.baseurl }}/images/user_manual/Login.png)
 
 
