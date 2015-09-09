@@ -56,6 +56,6 @@ Las licencias se definen por sucursal, es decir en el caso de que haya mas de un
 
 El sistema de turnos estará instalado en una computadora la cual funcionará como servidor, a la cual se conectaran los distintos módulos. Una vez colocado el servidor en la red en la cual se usará se podrá acceder al mismo a través de un navegador web ( Chrome o Firefox ). Para lograr esto ingresar http://debServer en el navegador y verá la siguiente pantalla :
 
-![Login]({{ site.url }}{{ site.baseurl }}/images/user_manual/Login.png)
+![Login]({{ site.url }}{{ site.baseurl }}/assets/user_manual/Login.png)
 
 
