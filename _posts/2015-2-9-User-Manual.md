@@ -30,7 +30,7 @@ El sistema cuenta con seis entidades fundamentales las cuales permiten reproduci
 
 El sistema de turnos estará instalado en una computadora la cual funcionará como servidor, a la cual se conectaran los distintos módulos. Una vez colocado el servidor en la red en la cual se usará se podrá acceder al mismo a través de un navegador web ( Chrome o Firefox ). Para lograr esto ingresar http://debServer en el navegador y verá la siguiente pantalla :
 
-[Login]({{ site.url }}{{ site.baseurl }}/images/user_manual/screenshot.jpg)
+[Login]({{ site.url }}{{ site.baseurl }}/images/user_manual/login.png)
 
 
 # Licencias
