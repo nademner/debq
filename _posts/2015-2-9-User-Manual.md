@@ -87,15 +87,15 @@ El sistema se configura por sucursal, cada sistema viene con un usuario administ
 
 Cada sucursal tiene sus propias configuraciones, para poder modificar las configuraciones de cada sucursal debe autenticarse con el usuario administrador de la sucursal que desea configurar o con el usuario administrador de compañía.
 
-Una vez autenticado verá una pagina similar a la siguiente : 
+Una vez autenticado verá una página similar a la siguiente : 
 
 ![Selección de sucursal]({{ site.url }}{{ site.baseurl }}/assets/user_manual/seleccion_sucursal.png)
 
-en dicha pagina podrá seleccionar la sucursal a la cual desea ingresar, una vez seleccionada vera una pagina similar a la siguiente :
+en dicha página podrá seleccionar la sucursal a la cual desea ingresar, una vez seleccionada vera una página similar a la siguiente :
 
 ![Página principal]({{ site.url }}{{ site.baseurl }}/assets/user_manual/home.png)
 
-en dicha pagina podrá seleccionar si desea ingresar al modulo de atención o al modulo del panel de control, ingrese a este último y diríjase al menú **Configuraciones** , donde vera una pagina similar a la siguiente
+en dicha página podrá seleccionar si desea ingresar al modulo de atención o al modulo del panel de control, ingrese a este último y diríjase al menú **Configuraciones** , donde vera una página similar a la siguiente
 
 ![Panel de control > Configuraciones]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_configuraciones.png)
 
@@ -112,6 +112,111 @@ A continuación se explica que función cumple cada configuración.
     * Mantener ultimo por fila: En esta configuración se mantendrá el ultimo turno de cada fila que se visualiza en cada pantalla siempre que se pueda.
 
  * Estado de puesto: Los puestos de atención tienen estados, por defecto vienen los estados **Online** y **Offline** , esta configuración permite decidir si se desea que el estado se pueda cambiar desde el modulo puesto de atención, independientemente si se configura para que sea editable desde el puesto, los estados de cada puesto se configuran automáticamente a **Online** cuando un usuario ingresa al puesto de atención y a **Offline** cuando se retira o cuando tuvo una inactividad mayor a un tiempo x el cual es configurable.
+
+
+Si todavía no esta seguro de algunas configuraciones deje las que vinieron por defecto.
+
+
+## Configuración de usuarios
+
+El siguiente paso es configurar los usuarios, diríjase al menú **Usuarios** , vera una página similar a la siguiente:
+
+![Panel de control > Usuarios]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_usuarios.png)
+
+En dicho menú podrá configurar toda la información relacionada con los usuarios , como es  el nombre, el apellido, etc.
+
+También podrá configurar el **Puesto** en el cual trabajará. El sistema viene de fabrica con tantos **Puestos** como usuarios de atención tenga, por lo que por defecto cada usuario de atención tiene asignado un **Puesto**.
+
+
+## Configuración de filas
+
+Luego de configurar los usuarios es necesario configurar las filas, diríjase al menú **Filas** , vera una página similar la siguiente: 
+
+![Panel de control > Filas]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_filas.png)
+
+En este menú se podrá configurar todo lo relacionado con los tramites que posee en su ambiente de atención. A continuación se detalla cada una de las configuraciones:
+
+ * Información general
+    * Nombre : El nombre configurado del tramite será la propiedad que se utilizará en todo el sistema para identificar al tramite, por ejemplo en el puesto de atención.
+ * Sala de espera: Los tramites se pueden llegar a atender en mas de una sala de espera, pero deben tener configurada una por defecto, cuando se agregue un nuevo turno al tramite, este sera dirigido a la sala de espera por defecto.
+ * Numeración : Es posible configurar la numeración que usará el trámite , este debe ser adecuado con el template pre-establecido para las pantallas, por ejemplo si usted adquirió un template que utiliza numeración con letra, no le debe configurar , al trámite, una numeración sin letra. Si no esta seguro del template adquirido deje la configuración por defecto.
+ * Configuración: Es posible configurar un tramite para que sea una **fila de entrada**, generalmente hay dos flujos posibles :
+    * Flujo 1 : Una persona ingresa al establecimiento, se dirige al terminal táctil saca el turno y espera a ser llamado.
+    * Flujo 2 : Una persona ingresa al establecimiento, se dirige al caracol de turnos , toma un turno y espera a ser llamada.
+   en el segundo flujo el turno no es ingresado por una terminal táctil por lo que tiene que ser llamado si o si por un tramite que este configurado para que sea **fila de entrada**.
+ * Alertas : Es posible definir dos alertas, una por cantidad máxima de personas en espera excedida y otra por tiempo máximo de espera excedido, una vez que se hayan sobre-pasado dicho limites se le notificará a todo puesto de atención que atienda dicho tramite.
+
+## Configuración de Pantallas
+
+Una vez ingresado a dicho menú verá una pantalla similar a la siguiente : 
+
+![Panel de control > Pantallas]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_pantallas.png)
+
+La configuración de la pantalla le servirá para ajustar lo que desea ver en cada uno de los player que haya adquirido.
+ 
+ * Filas mostradas en Tv: Con esta configuración deberá seleccionar los tramites que desea visualizar la pantalla que está configurando, por ejemplo si usted configura para que en la pantalla se visualicen los tramites **Fila 1** y **Fila 3** , cuando desde el puesto de atención se avancen turnos sobre los tramites **Fila 1** y **Fila 3** estos se verán en esta pantalla y no otros, es decir si avanza turnos sobre **Fila 2** estos no los verá en dicha pantalla.
+ * Videos: Con esta configuración podrá seleccionar los videos que desea que se visualicen en la pantalla seleccionada ( al comienzo la lista le aparecerá vacía, en la siguiente sección se vera como subir al servidor un video )
+ * Textos: Con esta configuración podrá seleccionar los textos que desea que se visualicen en la pantalla seleccionada ( al comienzo la lista le aparecerá vacía, en la siguiente sección se vera como subir al servidor un texto )
+ * Template: 
+    * Template : Si usted adquirió mas de un template, puede configurar que template debe tener cada pantalla.
+    * Numero de entradas: Debe configurar cuantas filas tiene el turnero del template, si no esta seguro de que valor colocar, diríjase al player y cuentelas.
+
+
+## Configuración de medias
+
+En esta página podrá subir videos, textos e imágenes, cuando ingrese vera una pantalla similar a la siguiente:
+
+![Panel de control > Medias]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_medias.png)
+
+Al presionar el botón agregar le aparecerá la siguiente pantalla
+
+![Panel de control > Medias > Subir]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_medias_upload.png)
+
+Si desea subir un video seleccione la solapa subir video, busque el archivo en su computadora y presione **subir archivo**.
+Si desea subir un texto seleccione la solapa subir texto, complete en el recuadro el texto que desee y presione **subir texto**.
+
+
+Una vez que haya subido los videos y textos que desea diríjase nuevamente al menú **Pantallas** y seleccione que media desea ver en cada player.
+
+## Configuración de puestos
+
+Una de las configuraciones mas importante es la de los puestos, aquí sera donde configurará que trámites atiende cada puesto, cuando entre verá una pantalla similar a la siguiente:
+
+![Panel de control > Puestos]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_puestos.png)
+
+A continuación se detalla cada propiedad que puede configurar
+
+ * Propiedades generales
+    * Nombre: Esta propiedad le servirá para identificar al puesto a lo largo del sistema
+    * Nombre en tv: Este nombre es el que se verá en los players cuando dicho puesto llame a un turno.
+ * Sala de espera: Con esta propiedad esta configurando la ubicación física del puesto.
+ * Filas de atención: Con esta propiedad lo que hará es configurar que trámites atiende cada puesto.
+ * Filas de derivación: Con esta propiedad lo que hará es configurar a que trámites puede derivar turnos cada puesto.
+ * Inactividad : Con esta propiedad lo que hará es configurar el tiempo por el cual el puesto puede permanecer en estado **Online** sin realizar acciones.
+ * Estados disponibles: Aquí podrá configurar los estados que podrá configurar cada puesto desde el modulo **puesto de atención**
+ * Botones habilitados: Aquí podrá configurar los botones que tendrá visible cada puesto en el modulo **puesto de atención**
+
+Si usted posee mas de una sala de espera, donde las personas esperan para ser atendidas deberá leer la siguiente sección, en caso contrario puede saltearla :
+
+Cada puesto pertenece a una **Sala de espera** y atiende **Filas** , supongamos el siguiente caso
+
+ * El puesto **Box 01** esta ubicado en la sala de espera **Sala de espera 1** y atiende los tramites **Fila 1** y **Fila 2** 
+ * El puesto **Box 02** esta ubicado en la sala de espera **Sala de espera 2** y atiende los tramites **Fila 1** y **Fila 3** 
+
+Como tanto el **Box 01** como el **Box 02** atienden la **Fila 1** en distintas salas de espera , los turnos pertenecientes al tramite **Fila 1** se podrán atender tanto en la sala **Sala de espera 1** como en la sala **Sala de espera 2** , por esto es que es importante configurar una sala de espera por defecto , ya que cuando ingresa un turno por la terminal táctil , en dicho momento no es posible seleccionar la sala de espera a la cual debe ir a esperar el turno. Luego en una derivación de algún turno del tramite **Fila 1** se podrá seleccionar la sala de espera a la cual será enviado el turno.
+
+## Configuración de salas de espera
+
+Al entrar a este menú verá una pantalla similar a la siguiente:
+
+![Panel de control > Salas de espera]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_salas_espera.png)
+
+En esta pantalla podrá crear salas de espera y configurarles un nombre, el cual se utilizará para identificarla a lo largo del sistema.
+
+
+
+
+
 
 
 
