@@ -209,9 +209,40 @@ Como tanto el **Box 01** como el **Box 02** atienden la **Fila 1** en distintas 
 
 Al entrar a este menú verá una pantalla similar a la siguiente:
 
-![Panel de control > Salas de espera]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_salas_espera.png)
+![Panel de control > Salas de espera]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_sala_espera.png)
 
 En esta pantalla podrá crear salas de espera y configurarles un nombre, el cual se utilizará para identificarla a lo largo del sistema.
+
+## Configuración terminal táctil
+
+Diríjase al menú **Autoservicio** , al entrar vera una pagina como la siguiente : 
+
+![Panel de control > Autoservicio]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_terminales.png)
+
+En la opción **Filas habilitadas** podrá seleccionar que filas desea que se muestren en cada terminal táctil.
+
+Si desea por ejemplo tener los tramites agrupados por aquellos que se atienden en primer piso y en planta baja póngase en contacto con un administrador para que le habilite dicha opción.
+
+
+## Configuración de grupos de tramites
+
+Los puestos de atención atiende tramites, los turnos los atiende en el orden en el cual llegaron, es decir cuando llama a un turno llama al que hace mas tiempo esta esperando. A veces se requiere poder llamar al que mas tiempo esta esperando dentro de un grupo de tramites, para lograr esto se debe crear grupos, para hacerlo entrar al menú **Grupos de fila**, verá una pantalla como la siguiente:
+
+![Panel de control > Grupos]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_grupos.png)
+
+Para crear un nuevo grupo presione en el botón **Agregar nuevo grupo** , con esto se habrá creado un nuevo grupo y verá una pantalla similar a la siguiente:
+
+![Panel de control > Nuevo Grupo]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_grupos_2.png)
+
+Las propiedades
+
+ * Nombre
+ * Sala de espera por defecto
+ * Alertas
+
+cumplen la misma función que en el caso de las **Filas** 
+
+La propiedad **Filas agrupadas** le permite selecciona que filas desea agrupar en el grupo creado. Una vez hecho esto puede dirigirse al menú **Puestos** para asignarle el nuevo grupo a los puestos que desee.
 
 
 
