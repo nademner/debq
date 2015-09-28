@@ -196,6 +196,11 @@ A continuación se detalla cada propiedad que puede configurar
  * Estados disponibles: Aquí podrá configurar los estados que podrá configurar cada puesto desde el modulo **puesto de atención**
  * Botones habilitados: Aquí podrá configurar los botones que tendrá visible cada puesto en el modulo **puesto de atención**
 
+Es posible configurar el orden en el cual aparecen los tramites en el puesto de atención, esta funcionalidad en general se usa para que los usuarios que utilizan el puesto de atención sepan la importancia de cada tramite. Para poder elegir el orden , arrastre los tramites en la opción **filas de atención** de la siguiente manera:
+
+![Panel de control > Puestos]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_puestos_orden.png)
+
+
 Si usted posee mas de una sala de espera, donde las personas esperan para ser atendidas deberá leer la siguiente sección, en caso contrario puede saltearla :
 
 Cada puesto pertenece a una **Sala de espera** y atiende **Filas** , supongamos el siguiente caso
@@ -221,7 +226,7 @@ Diríjase al menú **Autoservicio** , al entrar vera una pagina como la siguient
 
 En la opción **Filas habilitadas** podrá seleccionar que filas desea que se muestren en cada terminal táctil.
 
-Si desea por ejemplo tener los tramites agrupados por aquellos que se atienden en primer piso y en planta baja póngase en contacto con un administrador para que le habilite dicha opción.
+Si desea tener tramites agrupados por sector por ejemplo tenerlos agrupados por aquellos que se atienden en primer piso y en planta baja póngase en contacto con un administrador para que le habilite la opción de edición de niveles.
 
 
 ## Configuración de grupos de tramites
@@ -242,7 +247,7 @@ Las propiedades
 
 cumplen la misma función que en el caso de las **Filas** 
 
-La propiedad **Filas agrupadas** le permite selecciona que filas desea agrupar en el grupo creado. Una vez hecho esto puede dirigirse al menú **Puestos** para asignarle el nuevo grupo a los puestos que desee.
+La propiedad **Filas agrupadas** le permite seleccionar que filas desea agrupar en el grupo creado. Una vez hecho esto puede dirigirse al menú **Puestos** para asignarle el nuevo grupo a los puestos que desee.
 
 
 
