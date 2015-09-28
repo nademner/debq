@@ -9,12 +9,13 @@ Manual de usuario para el sistema de turnos de debMedia.
 
 # Introducción
 
-El sistema de turnos cuenta fundamentalmente con seis módulos:
+El sistema de turnos cuenta fundamentalmente con siete módulos:
 
  * Player: Este módulo es el encargado de visualizar los turnos que son llamados por los puestos de atención.
  * Terminal de auto-gestión: Este módulo es por el cual se podrá ingresar turnos ( modulo opcional )
  * Panel de control: Este módulo permite cambiar la configuración del sistema.
  * Estadísticas: Este módulo permite el calculo de estadísticas a partir de los movimientos generados por los turnos.
+ * Movimientos: Este modulo permite visualizar todos los movimientos realizados por un turno, desde que ingreso al sistema hasta que fue finalizado.
  * Monitoreo: Este modulo permite visualizar en tiempo real el estado del sistema.
  * Puesto de atención: Este módulo permite llamar los turnos sacados desde la terminal de auto-gestión.
 
@@ -278,19 +279,139 @@ A continuación se detalla la funcionalidad de cada sección:
  13. Este selector permite elegir la fila a donde se derivará el turno en atención.
  14. Botón que deriva el turno en atención.
  15. Este botón manda al turno en atención, al final de la fila, es similar al botón anterior con la diferencia que no computa estadística y es útil para el caso donde la persona no se presento, pero no se desea perder el turno para contemplar la eventual aparición de la persona.
- 16. Este botón cancela la ultima derivación realizada por el puesto y se lo coloca en atención, este botón es útil para el caso donde la persona que atiende el puesto realizo una derivación errónea.
+ 16. Este botón cancela la ultima derivación realizada por el puesto y le coloca el turno al puesto como turno en atención, este botón es útil para el caso donde la persona que atiende el puesto realizo una derivación errónea.
  17. Este botón cancela el llamado realizado, es útil para el caso donde la persona realizo un llamado erróneo.
  18. Este botón lo dirige a la pagina anterior.
  19. Este botón cierra la sesión y lo dirige a la página de autenticación.
 
+# Monitoreo
+
+Este módulo permite visualizar en tiempo real lo que esta sucediendo con las distintas filas , puestos , pantallas y terminales táctiles configuradas. También permite se muestran mensajes relevantes al sistema, por ejemplo, el reinicio automático de filas. Para entrar a este modulo dirigirse al **Panel de Control** y entrar en la opción **Monitoreo** , al entrar vera una página similar a la siguiente : 
 
 
+![Panel de control > Monitoreo]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_monitoreo.png)
+
+La página esta dividida en secciones, cada una indica parámetros relevantes a su funcionamiento.
+
+ * Filas y Grupos: 
+  - Turno actual: Último turno llamado en la fila/grupo.
+  - En espera: Cantidad de personas esperando para ser atendidas
+  - Máximo tiempo de espera: Muestra el tiempo mas grande de espera de entre las personas que están esperando para ser atendidas.
+  - Tiempo de espera promedio: Muestra el promedio que esperaron las personas para ser atendidas durante la ultima hora.
+
+ * Pantallas:
+  - Pantalla: Muestra el número de la pantalla.
+  - Estado: Muestra el estado actual de la pantalla.
+  - Volumen: Muestra el volumen de la pantalla.
+
+ * Puestos:
+  - Puesto de trabajo: Muestra el nombre del puesto.
+  - Turno actual: Muestra el turno que esta atendiendo el puesto.
+  - Usuario: Muestra el usuario que esta utilizando el puesto.
+  - Sala de espera: Muestra en que sala de espera esta ubicado el puesto.
+  - Estado: Muestra el estado del puesto.
+
+ * Terminales:
+  - Terminal: Muestra el numero de la terminal táctil.
+  - Estado: Muestra el estado de la terminal táctil.
+
+ * Mensajes: Mensajes relevantes al funcionamiento del sistema.
 
 
+# Movimientos
+
+Este modulo permite visualizar todos los movimientos realizados por un turno. Para acceder dirigirse al **Panel de Control** e ingresar en la opción **Movimientos** , al ingresar verá una página similar a la siguiente:
+
+![Panel de control > Movimientos]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_movimientos.png)
+
+Los movimientos se almacenan por mes, por lo tanto solo podrá ver los movimientos realizados en el mes actual. Si desea ver de meses anteriores deberá exportarlos utilizando el botón **Exportar** junto con el calendario que tiene alado el cual permite seleccionar el mes que desea exportar.
+
+El módulo permite seleccionar un día del mes utilizando el calendario. Una vez seleccionado el día se le mostraran en la ventana de la derecha todos los movimientos que hubo en el día seleccionado.
+
+A continuación se describe que indica cada columna:
+
+ * Id de turno: Es un número único que permite identificar al turno univocamente.
+ * Turno: Letra y numero del turno.
+ * Acción: Muestra la acción realizada sobre el turno, como por ejemplo INGRESO,LLAMADA,FINALIZACIÓN,etc.
+ * Fila: Fila sobre la cual se realizó la acción, por ejemplo en el caso que la acción sea INGRESO, este campo muestra la fila donde ingreso el turno.
+ * Puesto: Este campo aplica cuando la acción es realizada por algún puesto, por ejemplo la acción LLAMADA la realiza un puesto y este se indica en esta columna.
+ * Usuario: Este campo indica el usuario que esta utilizando el puesto que realizo la acción y aplica a los mismos casos que la columna anterior.
+ * Tiempo de espera: Muestra el tiempo que espero el turno en la ultima espera.
+ * Tiempo de atención: Muestra el tiempo que estuvo siendo atendido durante la ultima llamada.
+ * Tiempo total de espera: Muestra el tiempo de espera total que viene acumulando el turno, se diferencia del tiempo de espera por las posibles derivaciones del turno.
+ * Tiempo total de atención: Muestra el tiempo de atención total que viene acumulando el turno, se diferencia del tiempo de atención por las posibles derivaciones del turno.
+
+# Estadísticas
+
+Este modulo permite visualizar la estadísticas calculadas por el sistema. Para ingresar , dirigirse al **Panel de control** opción **Estadísticas**, al entrar verá una página como la siguiente:
 
 
+![Panel de control > Estadísticas]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_estadisticas.png)
 
 
+El sistema calcula 6 estadísticas:
+
+ * Cantidad: Cantidad de personas ingresadas, esta estadística se puede discriminar por usuario , por fila y por ambas.
+ * Tiempo de atención: Tiempo de atención promedio, esta estadística se puede discriminar por usuario , por fila y por ambas.
+ * Tiempo de espera: Tiempo de espera promedio, esta estadística se puede discriminar solo por fila.
+ * Tiempo de espera del cliente: Indica el tiempo de espera promedio total, es decir tiene en cuenta las esperas que tuvo en cada fila por la que pasó, esta estadística no se discrimina ni por fila ni por usuario.
+ * Tiempo de atención del cliente: Indica el tiempo de atención promedio total, es decir tiene en cuenta el tiempo de atención que tuvo en cada fila por la que pasó, esta estadística no se discrimina ni por fila ni por usuario. 
+ * Tiempo total del cliente: Indica el tiempo promedio total, tiene en cuenta tanto atención como espera, esta estadística no se discrimina ni por fila ni por usuario.
+
+Las estadísticas se pueden consultar en distintos periodos.
+
+ * Horas: Al elegir por horas podrá elegir desde que hora y hasta que hora desea ver las estadísticas así como el día de inicio y el día de fin.
+ * Días: Al elegir días solo le dejará elegir el día de inicio y el día de fin.
+ * Meses: Al elegir meses, lo dejará elegir un día de inicio y un día de fin, y a partir de dichas fechas se obtendrá el mes de inicio y el mes de fin.
+ * Años: Al elegir años, lo dejará elegir un día de inicio y un día de fin, y a partir de dichas fechas se obtendrá el año de inicio y el año de fin.
+
+El modulo permite graficar estadísticas o exportarlas a Excel, el graficador grafica un máximo de sesenta puntos.
+
+Para poder graficar primero expandir la opción **Parámetros de estadísticas** tocando el botón **Editar** al hacerlo verá lo siguiente: 
+
+
+![Panel de control > Estadísticas > Parámetros]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_estadisticas_parametros.png)
+
+
+Aquí podrá elegir el periodo y las fechas para el periodo elegido.
+
+
+Luego expanda la opción **Graficación** y verá lo siguiente: 
+
+![Panel de control > Estadísticas > Graficación]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_estadisticas_graficacion.png)
+
+
+Aquí podrá seleccionar, dependiendo de la estadística seleccionada los discriminadores, puede elegir mas de uno y para las estadísticas que tienen dos discriminadores puede elegir ambos o uno a la vez.
+
+Por ejemplo si desea graficar la cantidad de personas que fueron atendidas en el tramite **Fila 1** en el día 28/09/2015 en horas deberá configurar los parámetros de la siguiente manera:
+
+ * Periodo: Horas
+ * Fecha inicial: 28/09/2015
+ * Fecha final: 28/09/2015
+ * Estadística: Cantidad
+ * Filas: Fila 1
+
+Luego tocar el botón , graficar.
+
+Si desea graficar la cantidad de personas que fueron atendidas en el tramite **Fila 1** en el día 28/09/2015, en horas, discriminado por los usuarios **Atención 1** y **Atención 2** deberá configurar los parámetros de la siguiente manera:
+
+ * Periodo: Horas
+ * Fecha inicial: 28/09/2015
+ * Fecha final: 28/09/2015
+ * Estadística: Cantidad
+ * Filas: Fila 1
+ * Usuarios: Atención 1, Atención 2.
+
+Luego tocar el botón , graficar.
+
+
+Si desea exportar las estadísticas a Excel, primero configure los parámetros en la opción **Parámetros de estadísticas** y luego expanda la opción **Exportación**, al hacerlo verá lo siguiente:
+
+
+![Panel de control > Estadísticas > Exportación]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_estadisticas_exportacion.png)
+
+
+Los parámetros que debe configurar son los mismos que configura para la graficación. Una vez configurado esto presionar el botón **Exportar**.
 
 
 
