@@ -9,12 +9,13 @@ Manual de usuario para el sistema de turnos de debMedia.
 
 # Introducción
 
-El sistema de turnos cuenta fundamentalmente con cinco módulos fundamentales:
+El sistema de turnos cuenta fundamentalmente con seis módulos:
 
  * Player: Este módulo es el encargado de visualizar los turnos que son llamados por los puestos de atención.
  * Terminal de auto-gestión: Este módulo es por el cual se podrá ingresar turnos ( modulo opcional )
  * Panel de control: Este módulo permite cambiar la configuración del sistema.
  * Estadísticas: Este módulo permite el calculo de estadísticas a partir de los movimientos generados por los turnos.
+ * Monitoreo: Este modulo permite visualizar en tiempo real el estado del sistema.
  * Puesto de atención: Este módulo permite llamar los turnos sacados desde la terminal de auto-gestión.
 
 El sistema cuenta con seis entidades fundamentales las cuales permiten reproducir cualquier tipo de ambiente de atención.
@@ -76,6 +77,7 @@ Usuarios de atención
 
 donde N identifica la cantidad máxima de usuarios para la licencia adquirida.
 
+NOTA: Los usuarios mostrados son un ejemplo, en este ejemplo el sistema esta inicializado con la compañía **Debtech** y con una sucursal **Devoto** , si su sistema esta inicializado con otro nombre de compañía y sucursal , los usuarios cambian según los nombres usados.
 
 # Puesta en marcha
 
@@ -198,7 +200,7 @@ A continuación se detalla cada propiedad que puede configurar
 
 Es posible configurar el orden en el cual aparecen los tramites en el puesto de atención, esta funcionalidad en general se usa para que los usuarios que utilizan el puesto de atención sepan la importancia de cada tramite. Para poder elegir el orden , arrastre los tramites en la opción **filas de atención** de la siguiente manera:
 
-![Panel de control > Puestos]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_puestos_orden.png)
+![Panel de control > Puestos > Orden]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_puestos_orden.png)
 
 
 Si usted posee mas de una sala de espera, donde las personas esperan para ser atendidas deberá leer la siguiente sección, en caso contrario puede saltearla :
@@ -247,7 +249,39 @@ Las propiedades
 
 cumplen la misma función que en el caso de las **Filas** 
 
-La propiedad **Filas agrupadas** le permite seleccionar que filas desea agrupar en el grupo creado. Una vez hecho esto puede dirigirse al menú **Puestos** para asignarle el nuevo grupo a los puestos que desee.
+La propiedad **Filas agrupadas** le permite seleccionar que filas desea agrupar en el grupo creado. Una vez hecho esto puede dirigirse al menú **Puestos** en la opción **filas de atención** para asignarle el nuevo grupo a los puestos que desee.
+
+
+
+# Puesto de atención
+
+El puesto de atención será el modulo que utilizarán las personas que atenderán los distintos trámites configurados, en esta sección se explicará como utilizarlo. Para ingresar al puesto de atención se puede o autenticar con un usuario de atención, por ejemplo atencion1.devoto@debtech.com o puede ingresar con el usuario adminitrador teniendo en cuenta que esté por defecto no tiene asignado ningún puesto, por lo tanto debe dirigirse al **Panel de control** solapa **Usuarios** y asignarle un puesto al usuario administrador. Al ingresar al puesto de atención verá la siguiente página: 
+
+
+![Puesto de atención]({{ site.url }}{{ site.baseurl }}/assets/user_manual/ws_descripcion.png)
+
+
+A continuación se detalla la funcionalidad de cada sección:
+
+ 1  Estado del puesto de atención.  
+ 2  Lista de filas habilitadas desde el panel de control para el puesto.
+ 3  Botón para llamar al siguiente en la fila seleccionada en la lista 2.
+ 4  Lista de turnos de la fila seleccionada en la lista 2.
+ 5  Botón para llamar al turno seleccionado en la lista 4.
+ 6  Campo para ingresar numero a llamar cuando la fila es **fila de entrada**.
+ 7  Campo donde se visualiza el turno en atención.
+ 8  Botón para volver a llamar al turno llamado.
+ 9  Campo que indica la cantidad de personas en espera para la fila seleccionada en la lista 2.
+ 10 Último turno llamado para la fila seleccionada en la lista 2.
+ 11 Botón para finalizar el turno llamado.
+ 12 Botón para finalizar el turno llamado, para el caso donde la persona no se presentó, este botón a diferencia del anterior, finaliza el turno pero no computa estadística.
+ 13 Este selector permite elegir la fila a donde se derivará el turno en atención.
+ 14 Botón que deriva el turno en atención.
+ 15 Este botón manda al turno en atención, al final de la fila, es similar al botón anterior con la diferencia que no computa estadística y es útil para el caso donde la persona no se presento, pero no se desea perder el turno para contemplar la eventual aparición de la persona.
+ 16 Este botón cancela la ultima derivación realizada por el puesto y se lo coloca en atención, este botón es útil para el caso donde la persona que atiende el puesto realizo una derivación errónea.
+ 17 Este botón cancela el llamado realizado, es útil para el caso donde la persona realizo un llamado erróneo.
+ 18 Este botón lo dirige a la pagina anterior.
+ 19 Este botón cierra la sesión y lo dirige a la página de autenticación.
 
 
 
