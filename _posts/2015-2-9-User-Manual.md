@@ -286,7 +286,7 @@ A continuación se detalla la funcionalidad de cada sección:
 
 # Monitoreo
 
-Este módulo permite visualizar en tiempo real lo que esta sucediendo con las distintas filas , puestos , pantallas y terminales táctiles configuradas. También permite se muestran mensajes relevantes al sistema, por ejemplo, el reinicio automático de filas. Para entrar a este modulo dirigirse al **Panel de Control** y entrar en la opción **Monitoreo** , al entrar vera una página similar a la siguiente : 
+Este módulo permite visualizar en tiempo real lo que esta sucediendo con las distintas filas , puestos , pantallas y terminales táctiles configuradas. También muestra mensajes relevantes al sistema, por ejemplo, el reinicio automático de filas. Para entrar a este modulo dirigirse al **Panel de Control** y entrar en la opción **Monitoreo** , al entrar vera una página similar a la siguiente : 
 
 
 ![Panel de control > Monitoreo]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_monitoreo.png)
