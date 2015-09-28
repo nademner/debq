@@ -263,25 +263,25 @@ El puesto de atención será el modulo que utilizarán las personas que atender�
 
 A continuación se detalla la funcionalidad de cada sección:
 
- 1  Estado del puesto de atención.  
- 2  Lista de filas habilitadas desde el panel de control para el puesto.
- 3  Botón para llamar al siguiente en la fila seleccionada en la lista 2.
- 4  Lista de turnos de la fila seleccionada en la lista 2.
- 5  Botón para llamar al turno seleccionado en la lista 4.
- 6  Campo para ingresar numero a llamar cuando la fila es **fila de entrada**.
- 7  Campo donde se visualiza el turno en atención.
- 8  Botón para volver a llamar al turno llamado.
- 9  Campo que indica la cantidad de personas en espera para la fila seleccionada en la lista 2.
- 10 Último turno llamado para la fila seleccionada en la lista 2.
- 11 Botón para finalizar el turno llamado.
- 12 Botón para finalizar el turno llamado, para el caso donde la persona no se presentó, este botón a diferencia del anterior, finaliza el turno pero no computa estadística.
- 13 Este selector permite elegir la fila a donde se derivará el turno en atención.
- 14 Botón que deriva el turno en atención.
- 15 Este botón manda al turno en atención, al final de la fila, es similar al botón anterior con la diferencia que no computa estadística y es útil para el caso donde la persona no se presento, pero no se desea perder el turno para contemplar la eventual aparición de la persona.
- 16 Este botón cancela la ultima derivación realizada por el puesto y se lo coloca en atención, este botón es útil para el caso donde la persona que atiende el puesto realizo una derivación errónea.
- 17 Este botón cancela el llamado realizado, es útil para el caso donde la persona realizo un llamado erróneo.
- 18 Este botón lo dirige a la pagina anterior.
- 19 Este botón cierra la sesión y lo dirige a la página de autenticación.
+ 1.  Estado del puesto de atención.  
+ 2.  Lista de filas habilitadas desde el panel de control para el puesto.
+ 3.  Botón para llamar al siguiente en la fila seleccionada en la lista 2.
+ 4.  Lista de turnos de la fila seleccionada en la lista 2.
+ 5.  Botón para llamar al turno seleccionado en la lista 4.
+ 6.  Campo para ingresar numero a llamar cuando la fila es **fila de entrada**.
+ 7.  Campo donde se visualiza el turno en atención.
+ 8.  Botón para volver a llamar al turno llamado.
+ 9.  Campo que indica la cantidad de personas en espera para la fila seleccionada en la lista 2.
+ 10. Último turno llamado para la fila seleccionada en la lista 2.
+ 11. Botón para finalizar el turno llamado.
+ 12. Botón para finalizar el turno llamado, para el caso donde la persona no se presentó, este botón a diferencia del anterior, finaliza el turno pero no computa estadística.
+ 13. Este selector permite elegir la fila a donde se derivará el turno en atención.
+ 14. Botón que deriva el turno en atención.
+ 15. Este botón manda al turno en atención, al final de la fila, es similar al botón anterior con la diferencia que no computa estadística y es útil para el caso donde la persona no se presento, pero no se desea perder el turno para contemplar la eventual aparición de la persona.
+ 16. Este botón cancela la ultima derivación realizada por el puesto y se lo coloca en atención, este botón es útil para el caso donde la persona que atiende el puesto realizo una derivación errónea.
+ 17. Este botón cancela el llamado realizado, es útil para el caso donde la persona realizo un llamado erróneo.
+ 18. Este botón lo dirige a la pagina anterior.
+ 19. Este botón cierra la sesión y lo dirige a la página de autenticación.
 
 
 
