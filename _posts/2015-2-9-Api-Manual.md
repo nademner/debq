@@ -438,7 +438,7 @@ Este método lo que hace es cancelar el último llamado realizado por el usuario
 ```
 Request Method: POST
 
-Request URL: http://debserver/api/workstation/cancelCall
+Request URL: http://debserver/api/workstation/cancelcall
 
 Request Headers:
     Accept: application/json
@@ -459,7 +459,7 @@ Este método lo que hace es cancelar la ultima derivación realizada, al turno s
 ```
 Request Method: POST
 
-Request URL: http://debserver/api/workstation/cancelDerivation
+Request URL: http://debserver/api/workstation/cancelderivation
 
 Request Headers:
     Accept: application/json
