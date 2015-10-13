@@ -223,6 +223,12 @@ Response Body:
             "id": "Id de sala",
             "name": "Nombre de sala"
         },
+        "callableWaitingRooms": [                                           //Sala de espera en donde puede llamar el puesto.
+          {
+            "id": "Id de sala",
+            "name": "Nombre de sala"
+          }
+        ],
         "possibleStates":                                                   //Posibles estados que puede tener el puesto de trabajo.
         [  
             {  
@@ -297,6 +303,7 @@ Request Body:
 {
     'queueGroup.id' : 'Id de grupo',            //Campo obligatorio
     'turn.id' : 'Id de turno'                   //Campo opcional  
+    'waitingRoom.id' : 'Id de sala de espera'   //Campo opcional 
 }
 
 Response Headers:
@@ -316,6 +323,7 @@ Status code: 200 OK
 ```
 
 Como se observa en el request body el parámetro 'qTurn.id' es opcional. En caso de no completar dicho campo el servidor llamará automáticamente al siguiente. En caso contrario tratará de llamar el turno especificado.
+El campo 'waitingRoom.id' también es opcional, si no se envía se tomara la sala de espera a la que pertenece el puesto para realizar el llamado. Es importante notar que en el caso que se especifique un id de turno no es necesario completar el id de sala de espera ya que este parámetro se tomará del turno especificado.
 
 #### Proceso de finalizado
 
