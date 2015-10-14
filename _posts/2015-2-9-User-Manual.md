@@ -276,17 +276,18 @@ A continuación se detalla la funcionalidad de cada sección:
  7.  Campo para ingresar numero a llamar cuando la fila es **fila de entrada**.
  8.  Campo donde se visualiza el turno en atención.
  9.  Botón para volver a llamar al turno llamado.
- 10.  Campo que indica la cantidad de personas en espera para la fila seleccionada en la lista 2.
+ 10. Campo que indica la cantidad de personas en espera para la fila seleccionada en la lista 2.
  11. Último turno llamado para la fila seleccionada en la lista 2.
- 12. Botón para finalizar el turno llamado.
- 13. Botón para finalizar el turno llamado, para el caso donde la persona no se presentó, este botón a diferencia del anterior, finaliza el turno pero no computa estadística.
- 14. Este selector permite elegir la fila a donde se derivará el turno en atención.
- 15. Botón que deriva el turno en atención.
- 16. Este botón manda al turno en atención, al final de la fila, es similar al botón anterior con la diferencia que no computa estadística y es útil para el caso donde la persona no se presento, pero no se desea perder el turno para contemplar la eventual aparición de la persona.
- 17. Este botón cancela la ultima derivación realizada por el puesto y le coloca el turno al puesto como turno en atención, este botón es útil para el caso donde la persona que atiende el puesto realizo una derivación errónea.
- 18. Este botón cancela el llamado realizado, es útil para el caso donde la persona realizo un llamado erróneo.
- 19. Este botón lo dirige a la pagina anterior.
- 20. Este botón cierra la sesión y lo dirige a la página de autenticación.
+ 12. Campo que indica tiempo de atención del turno que se esta atendiendo.
+ 13. Botón para finalizar el turno llamado.
+ 14. Botón para finalizar el turno llamado, para el caso donde la persona no se presentó, este botón a diferencia del anterior, finaliza el turno pero no computa estadística.
+ 15. Este selector permite elegir la fila a donde se derivará el turno en atención.
+ 16. Botón que deriva el turno en atención.
+ 17. Este botón manda al turno en atención, al final de la fila, es similar al botón anterior con la diferencia que no computa estadística y es útil para el caso donde la persona no se presento, pero no se desea perder el turno para contemplar la eventual aparición de la persona.
+ 18. Este botón cancela la ultima derivación realizada por el puesto y le coloca el turno al puesto como turno en atención, este botón es útil para el caso donde la persona que atiende el puesto realizo una derivación errónea.
+ 19. Este botón cancela el llamado realizado, es útil para el caso donde la persona realizo un llamado erróneo.
+ 20. Este botón lo dirige a la pagina anterior.
+ 21. Este botón cierra la sesión y lo dirige a la página de autenticación.
 
 Es importante notar que todas las alertas configuradas para los grupos y/o filas son para la sala de espera a la cual pertenece el puesto, incluso si se cambia la sala de espera desde la opción 4.
 
