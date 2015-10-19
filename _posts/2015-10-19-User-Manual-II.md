@@ -30,7 +30,7 @@ El sistema cuenta con seis entidades fundamentales las cuales permiten reproduci
 
 Cada entidad cumple su función y es fundamental entender las relaciones que existen entre ellas para lograr una configuración adecuada para su ambiente de atención.
 
-![Relaciones]({{ site.url }}{{ site.baseurl }}/assets/user_manual/relaciones.png)
+![Relaciones]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/relaciones.png)
 
 ## Licencias
 
@@ -61,7 +61,7 @@ Las licencias se definen por sucursal, es decir en el caso de que haya mas de un
 
 El sistema de turnos estará instalado en una computadora la cual funcionará como servidor, a la cual se conectaran los distintos módulos. Una vez colocado el servidor en la red en la cual se usará se podrá acceder al mismo a través de un navegador web ( Chrome o Firefox ). Para lograr esto ingresar http://debServer en el navegador y verá la siguiente pantalla :
 
-![Login]({{ site.url }}{{ site.baseurl }}/assets/user_manual/login.png)
+![Login]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/login.png)
 
 El sistema vendrá inicializado según la licencia adquirida, es decir si adquirió una licencia Básica , el sistema vendrá inicializado con 5 usuarios , 5 filas y 1 pantalla. Por lo tanto una vez conectado al servidor a través del navegador se podrán autenticar con los siguientes usuarios :
 
@@ -92,15 +92,15 @@ Cada sucursal tiene sus propias configuraciones, para poder modificar las config
 
 Una vez autenticado verá una página similar a la siguiente : 
 
-![Selección de sucursal]({{ site.url }}{{ site.baseurl }}/assets/user_manual/seleccion_sucursal.png)
+![Selección de sucursal]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/seleccion_sucursal.png)
 
 en dicha página podrá seleccionar la sucursal a la cual desea ingresar, una vez seleccionada vera una página similar a la siguiente :
 
-![Página principal]({{ site.url }}{{ site.baseurl }}/assets/user_manual/home.png)
+![Página principal]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/home.png)
 
 en dicha página podrá seleccionar si desea ingresar al modulo de atención o al modulo del panel de control, ingrese a este último y diríjase al menú **Configuraciones** , donde vera una página similar a la siguiente
 
-![Panel de control > Configuraciones]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_configuraciones.png)
+![Panel de control > Configuraciones]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_configuraciones.png)
 
 A continuación se explica que función cumple cada configuración.
 
@@ -124,7 +124,7 @@ Si todavía no esta seguro de algunas configuraciones deje las que vinieron por 
 
 El siguiente paso es configurar los usuarios, diríjase al menú **Usuarios** , vera una página similar a la siguiente:
 
-![Panel de control > Usuarios]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_usuarios.png)
+![Panel de control > Usuarios]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_usuarios.png)
 
 En dicho menú podrá configurar toda la información relacionada con los usuarios , como es  el nombre, el apellido, etc.
 
@@ -135,7 +135,7 @@ También podrá configurar el **Puesto** en el cual trabajará. El sistema viene
 
 Luego de configurar los usuarios es necesario configurar las filas, diríjase al menú **Filas** , vera una página similar la siguiente: 
 
-![Panel de control > Filas]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_filas.png)
+![Panel de control > Filas]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_filas.png)
 
 En este menú se podrá configurar todo lo relacionado con los tramites que posee en su ambiente de atención. A continuación se detalla cada una de las configuraciones:
 
@@ -153,7 +153,7 @@ En este menú se podrá configurar todo lo relacionado con los tramites que pose
 
 Una vez ingresado a dicho menú verá una pantalla similar a la siguiente : 
 
-![Panel de control > Pantallas]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_pantallas.png)
+![Panel de control > Pantallas]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_pantallas.png)
 
 La configuración de la pantalla le servirá para ajustar lo que desea ver en cada uno de los player que haya adquirido.
  
@@ -169,11 +169,11 @@ La configuración de la pantalla le servirá para ajustar lo que desea ver en ca
 
 En esta página podrá subir videos, textos e imágenes, cuando ingrese vera una pantalla similar a la siguiente:
 
-![Panel de control > Medias]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_medias.png)
+![Panel de control > Medias]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_medias.png)
 
 Al presionar el botón agregar le aparecerá la siguiente pantalla
 
-![Panel de control > Medias > Subir]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_medias_upload.png)
+![Panel de control > Medias > Subir]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_medias_upload.png)
 
 Si desea subir un video seleccione la solapa subir video, busque el archivo en su computadora y presione **subir archivo**.
 Si desea subir un texto seleccione la solapa subir texto, complete en el recuadro el texto que desee y presione **subir texto**.
@@ -185,7 +185,7 @@ Una vez que haya subido los videos y textos que desea diríjase nuevamente al me
 
 Una de las configuraciones mas importante es la de los puestos, aquí sera donde configurará que trámites atiende cada puesto, cuando entre verá una pantalla similar a la siguiente:
 
-![Panel de control > Puestos]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_puestos.png)
+![Panel de control > Puestos]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_puestos.png)
 
 A continuación se detalla cada propiedad que puede configurar
 
@@ -202,7 +202,7 @@ A continuación se detalla cada propiedad que puede configurar
 
 Es posible configurar el orden en el cual aparecen los tramites en el puesto de atención, esta funcionalidad en general se usa para que los usuarios que utilizan el puesto de atención sepan la importancia de cada tramite. Para poder elegir el orden , arrastre los tramites en la opción **filas de atención** de la siguiente manera:
 
-![Panel de control > Puestos > Orden]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_puestos_orden.png)
+![Panel de control > Puestos > Orden]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_puestos_orden.png)
 
 
 Si usted posee mas de una sala de espera, donde las personas esperan para ser atendidas deberá leer la siguiente sección, en caso contrario puede saltearla :
@@ -220,7 +220,7 @@ Por otro lado la configuración de salas de espera atendibles permite a un puest
 
 Al entrar a este menú verá una pantalla similar a la siguiente:
 
-![Panel de control > Salas de espera]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_sala_espera.png)
+![Panel de control > Salas de espera]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_sala_espera.png)
 
 En esta pantalla podrá crear salas de espera y configurarles un nombre, el cual se utilizará para identificarla a lo largo del sistema.
 
@@ -228,7 +228,7 @@ En esta pantalla podrá crear salas de espera y configurarles un nombre, el cual
 
 Diríjase al menú **Autoservicio** , al entrar vera una pagina como la siguiente : 
 
-![Panel de control > Autoservicio]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_terminales.png)
+![Panel de control > Autoservicio]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_terminales.png)
 
 En la opción **Filas habilitadas** podrá seleccionar que filas desea que se muestren en cada terminal táctil.
 
@@ -239,11 +239,11 @@ Si desea tener tramites agrupados por sector por ejemplo tenerlos agrupados por 
 
 Los puestos de atención atiende tramites, los turnos los atiende en el orden en el cual llegaron, es decir cuando llama a un turno llama al que hace mas tiempo esta esperando. A veces se requiere poder llamar al que mas tiempo esta esperando dentro de un grupo de tramites, para lograr esto se debe crear grupos, para hacerlo entrar al menú **Grupos de fila**, verá una pantalla como la siguiente:
 
-![Panel de control > Grupos]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_grupos.png)
+![Panel de control > Grupos]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_grupos.png)
 
 Para crear un nuevo grupo presione en el botón **Agregar nuevo grupo** , con esto se habrá creado un nuevo grupo y verá una pantalla similar a la siguiente:
 
-![Panel de control > Nuevo Grupo]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_grupos_2.png)
+![Panel de control > Nuevo Grupo]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_grupos_2.png)
 
 Las propiedades
 
@@ -262,7 +262,7 @@ La propiedad **Filas agrupadas** le permite seleccionar que filas desea agrupar 
 El puesto de atención será el modulo que utilizarán las personas que atenderán los distintos trámites configurados, en esta sección se explicará como utilizarlo. Para ingresar al puesto de atención se puede o autenticar con un usuario de atención, por ejemplo atencion1.devoto@debtech.com o puede ingresar con el usuario adminitrador teniendo en cuenta que esté por defecto no tiene asignado ningún puesto, por lo tanto debe dirigirse al **Panel de control** solapa **Usuarios** y asignarle un puesto al usuario administrador. Al ingresar al puesto de atención verá la siguiente página: 
 
 
-![Puesto de atención]({{ site.url }}{{ site.baseurl }}/assets/user_manual/ws_descripcion.png)
+![Puesto de atención]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/ws_descripcion.png)
 
 
 A continuación se detalla la funcionalidad de cada sección:
@@ -296,7 +296,7 @@ Es importante notar que todas las alertas configuradas para los grupos y/o filas
 Este módulo permite visualizar en tiempo real lo que esta sucediendo con las distintas filas , puestos , pantallas y terminales táctiles configuradas. También muestra mensajes relevantes al sistema, por ejemplo, el reinicio automático de filas. Para entrar a este modulo dirigirse al **Panel de Control** y entrar en la opción **Monitoreo** , al entrar vera una página similar a la siguiente : 
 
 
-![Panel de control > Monitoreo]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_monitoreo.png)
+![Panel de control > Monitoreo]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_monitoreo.png)
 
 La página esta dividida en secciones, cada una indica parámetros relevantes a su funcionamiento.
 
@@ -329,7 +329,7 @@ La página esta dividida en secciones, cada una indica parámetros relevantes a 
 
 Este modulo permite visualizar todos los movimientos realizados por un turno. Para acceder dirigirse al **Panel de Control** e ingresar en la opción **Movimientos** , al ingresar verá una página similar a la siguiente:
 
-![Panel de control > Movimientos]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_movimientos.png)
+![Panel de control > Movimientos]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_movimientos.png)
 
 Los movimientos se almacenan por mes, por lo tanto solo podrá ver los movimientos realizados en el mes actual. Si desea ver de meses anteriores deberá exportarlos utilizando el botón **Exportar** junto con el calendario que tiene alado el cual permite seleccionar el mes que desea exportar.
 
@@ -353,7 +353,7 @@ A continuación se describe que indica cada columna:
 Este modulo permite visualizar la estadísticas calculadas por el sistema. Para ingresar , dirigirse al **Panel de control** opción **Estadísticas**, al entrar verá una página como la siguiente:
 
 
-![Panel de control > Estadísticas]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_estadisticas.png)
+![Panel de control > Estadísticas]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_estadisticas.png)
 
 
 El sistema calcula 6 estadísticas:
@@ -377,7 +377,7 @@ El modulo permite graficar estadísticas o exportarlas a Excel, el graficador gr
 Para poder graficar primero expandir la opción **Parámetros de estadísticas** tocando el botón **Editar** al hacerlo verá lo siguiente: 
 
 
-![Panel de control > Estadísticas > Parámetros]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_estadisticas_parametros.png)
+![Panel de control > Estadísticas > Parámetros]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_estadisticas_parametros.png)
 
 
 Aquí podrá elegir el periodo y las fechas para el periodo elegido.
@@ -385,7 +385,7 @@ Aquí podrá elegir el periodo y las fechas para el periodo elegido.
 
 Luego expanda la opción **Graficación** y verá lo siguiente: 
 
-![Panel de control > Estadísticas > Graficación]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_estadisticas_graficacion.png)
+![Panel de control > Estadísticas > Graficación]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_estadisticas_graficacion.png)
 
 
 Aquí podrá seleccionar, dependiendo de la estadística seleccionada los discriminadores, puede elegir mas de uno y para las estadísticas que tienen dos discriminadores puede elegir ambos o uno a la vez.
@@ -415,7 +415,7 @@ Luego tocar el botón , graficar.
 Si desea exportar las estadísticas a Excel, primero configure los parámetros en la opción **Parámetros de estadísticas** y luego expanda la opción **Exportación**, al hacerlo verá lo siguiente:
 
 
-![Panel de control > Estadísticas > Exportación]({{ site.url }}{{ site.baseurl }}/assets/user_manual/pc_estadisticas_exportacion.png)
+![Panel de control > Estadísticas > Exportación]({{ site.url }}{{ site.baseurl }}/assets/user_manual_II/pc_estadisticas_exportacion.png)
 
 
 Los parámetros que debe configurar son los mismos que configura para la graficación. Una vez configurado esto presionar el botón **Exportar**.
