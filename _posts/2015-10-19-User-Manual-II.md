@@ -3,7 +3,7 @@ layout: post
 title: Manual de usuario v3.1.x
 ---
 
-Manual de usuario para el sistema de turnos de debMedia.
+Manual de usuario para el sistema de turnos de debMedia :).
 
 ---
 
